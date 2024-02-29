@@ -9,12 +9,13 @@
 	.align	2
 	.globl	generatePrimes
 	.type	generatePrimes, @function
+	
 generatePrimes:
 	#start your code
-	li t0,0
-	li t1,2
+	li t0,0		#index
+	li t1,2		#i
 loopi:
-	bgt t1,a1,gerend
+	bgt t1,a1,gerend	#i<n
 	addi a0,t1,0
 	call __floatsidf
 	call sqrt
